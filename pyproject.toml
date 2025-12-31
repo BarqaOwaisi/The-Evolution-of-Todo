@@ -1,0 +1,22 @@
+[project]
+name = "todo-cli"
+version = "0.1.0"
+description = "A simple in-memory todo CLI application"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console"
+]
+authors = [
+    { name = "Todo CLI Developer", email = "todo@example.com" }
+]
+
+[project.scripts]
+todo-cli = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
